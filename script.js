@@ -1,16 +1,13 @@
-const images = [
-  "images/father.jpg",
-  "images/hifazat.webp",
-  "images/qonot.jpg",
-  "images/tarawih.webp",
-  
+const duas = [
+  "اللّهُـمَّ اغْفِـرْ لي وَارْحَمْـني وَاهْـدِني وَعافِـني وَارْزُقْـني",
+  "رَبِّ زِدْنِي عِلْمًا",
+  "اللّهُـمَّ إِنِّي أَسْأَلُكَ الجَنَّةَ",
+  "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً",
+  "اللّهُـمَّ اجْعَلْنِي مِنَ الصَّابِرِينَ",
+  "اللّهُـمَّ اهْدِنِي الصِّرَاطَ المُسْتَقِيمَ"
 ];
 
-const btn = document.getElementById("btn");
-const img = document.getElementById("duaImage");
-
-btn.addEventListener("click", function () {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  img.src = images[randomIndex];
-  img.style.display = "block";
-});
+function newDua() {
+  const randomIndex = Math.floor(Math.random() * duas.length);
+  document.getElementById("dua-text").innerText = duas[randomIndex];
+}
